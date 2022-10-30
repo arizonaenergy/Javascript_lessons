@@ -1,17 +1,29 @@
-// string
-const str = "";
-const str1 = "";
-const str2 = ``;
-// undefined
-let pivozavr;
-// null
-// number
-let num1 = 1;
-let num2 = 12.23;
-// bollean
-// true
-// false
-// sloznije tipi
-// function
-// array
-// oboject
+// KEY = VALUE
+// KEY MOZET BITJ LUBOJ
+// let button = "";
+let number = 1;
+let bool = true;
+let button = document.querySelector("");
+// var
+// const
+
+// SCOPES OKRUZENIJE {}
+
+if (true) {
+  let scope = 1;
+  if (true) {
+    let scope = 1;
+  }
+}
+
+// let scope = 1;
+
+let c = "pivozavr";
+if (true) {
+  let b = "poshel";
+  console.log(a + b);
+  if (true) {
+    let a = "pivandrik";
+    console.log(a + b + c);
+  }
+}
