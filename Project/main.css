@@ -32,7 +32,8 @@
 .left-section {
   width: 50%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .right-section {
   width: 50%;
@@ -56,7 +57,7 @@
   /* justify-content: center; */
   width: 80%;
   min-height: 100px;
-  max-height: 300px;
+  /* max-height: 300px; */
   border-radius: 16px;
   background-color: white;
 }

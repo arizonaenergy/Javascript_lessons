@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .header {
+      display: flex;
+      width: 100%;
+      height: 40px;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid gray;
+      background-color: #005db7;
+    }
+    .first {
+      height: 20px;
+      width: 10%;
+      background-color: blueviolet;
+    }
+    .second {
+      height: 20px;
+      width: 10%;
+      background-color: blueviolet;
+    }
+    .third {
+      height: 20px;
+      width: 10%;
+      background-color: blueviolet;
+    }
+    .container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
+    }
+    .left {
+      width: 20%;
+      background-color: #001a33;
+      flex-direction: column;
+    }
+    .right {
+      height: 100%;
+      width: 80%;
+      min-height: 100vh;
+      background-color: whitesmoke;
+    }
+    .image {
+      margin: 10px 0;
+      /* height: 10px; */
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .heading {
+      margin: 10px 0;
+      padding: 10px 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .media {
+      margin: 10px 0;
+
+      height: 100%;
+      width: 100%;
+
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .links {
+      margin: 10px 0;
+
+      height: 100%;
+      width: 100%;
+      display: flex;
+
+      flex-direction: column;
+      justify-content: space-around;
+      min-height: 100%;
+    }
+    .imagediv {
+      height: 120px;
+      width: 120px;
+      /* ZAPOMNITJ */
+      border-radius: 50%;
+    }
+    .mediafiles {
+      height: 25px;
+      width: 25px;
+      background-color: grey;
+      border-radius: 50%;
+      margin: 0 5px;
+    }
+    .testclass {
+      height: 100%;
+      width: 100%;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .testclass-link {
+      margin-left: 10px;
+    }
+
+    .right-header {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      background-color: whitesmoke;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .headerabout {
+      justify-content: space-between;
+      border-radius: 50%;
+    }
+    .profession {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .aboutside {
+      /* width: 0 50%; */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .imgeabout {
+      width: 90%;
+      height: 70%;
+    }
+    .facts1234 {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding: 0 50px;
+      border-radius: 30px;
+    }
+    .skills {
+      display: flex;
+
+      border-radius: 20px;
+      justify-content: space-around;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <div class="first"></div>
+      <div class="second"></div>
+      <div class="third"></div>
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="">
+          <div class="image">
+            <img
+              src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/profile-img.jpg"
+              class="imagediv"
+            />
+          </div>
+          <div class="heading"><h3 style="color: White">Alex Smith</h3></div>
+          <div class="media">
+            <div class="mediafiles"></div>
+            <div class="mediafiles"></div>
+            <div class="mediafiles"></div>
+            <div class="mediafiles"></div>
+            <div class="mediafiles"></div>
+          </div>
+          <div class="links">
+            <div class="testclass">
+              <!-- img -->
+              <div class="">Image</div>
+              <!-- name -->
+              <div class="testclass-link">Home</div>
+            </div>
+            <div class="testclass">
+              <div>Image</div>
+              <div class="testclass-link">About</div>
+            </div>
+            <div class="testclass">
+              <div>Image</div>
+              <div class="testclass-link">Resume</div>
+            </div>
+            <div class="testclass">
+              <div>Image</div>
+              <div class="testclass-link">Portfolio</div>
+            </div>
+            <div class="testclass">
+              <div>Image</div>
+              <div class="testclass-link">Services</div>
+            </div>
+            <div class="testclass">
+              <div>Image</div>
+              <div class="testclass-link">Contacts</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right-header"><h1 style="color: black">Alex Smith</h1></div>
+        <h1 class="headerabout">About</h1>
+        <div class="headerabout">
+          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+          fugiat sit in iste officiis commodi quidem hic quas.
+        </div>
+        <h2 class="profession" style="color: #001a33">
+          UI/UX Designer & Web Developer.
+        </h2>
+        <h4 class="profession">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </h4>
+        <div style="display: flex; margin-top: 50px" class="aboutside">
+          <div class="" style="display: flex; width: 50%">
+            <img
+              class="imgeabout"
+              src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/profile-img.jpg"
+            />
+          </div>
+
+          <!-- <h2 class="profession" style="color: #001a33"></h2> -->
+          <div
+            class=""
+            style="display: flex; width: 50%; flex-direction: column"
+          >
+            <div class="" style="display: flex">
+              <div class="leftside" style="width: 50%">
+                <div class="" style="display: flex">
+                  <div>>Birthday:</div>
+                  <div>1 May 1995</div>
+                </div>
+                <div class="" style="display: flex">
+                  <div>>Website:</div>
+                  <div>www.example.com</div>
+                </div>
+                <div class="" style="display: flex">
+                  <div>>Phone:</div>
+                  <div>+123 456 7890</div>
+                </div>
+                <div class="" style="display: flex">
+                  <div>>City:</div>
+                  <div>New York, USA</div>
+                </div>
+              </div>
+
+              <div class="rightside" style="width: 50%">
+                <div style="display: flex">
+                  <div>>Age:</div>
+                  <div>30</div>
+                </div>
+                <div class="" style="display: flex">
+                  <div>>Degree:</div>
+                  <div>Master</div>
+                </div>
+                <div class="" style="display: flex">
+                  <div>>E-mail:</div>
+                  <div>email@example.com</div>
+                </div>
+                <div class="" style="display: flex">
+                  <div>>Freelance:</div>
+                  <div>Available</div>
+                </div>
+              </div>
+            </div>
+            <div style="margin-top: 40px">
+              Officiis eligendi itaque labore et dolorum mollitia officiis optio
+              vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor
+              incidunt officia tempore. Et eius omnis. Cupiditate ut dicta
+              maxime officiis quidem quia. Sed et consectetur qui quia
+              repellendus itaque neque. Aliquid amet quidem ut quaerat
+              cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium
+              dolores.
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h1>Facts</h1>
+            <div>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </div>
+          </div>
+        </div>
+        <div class="facts1234">
+          <div>
+            <div>232</div>
+            <div>Happy Clients</div>
+            <div>consequuntur quae</div>
+          </div>
+          <div>
+            <div>521</div>
+            <div>Projects</div>
+            <div>adipisci atque cum quia aut</div>
+          </div>
+          <div>
+            <div>1 453</div>
+            <div>Hours Of Support</div>
+            <div>aut commodi quaerat</div>
+          </div>
+          <div>
+            <div>32</div>
+            <div>Hard Workers</div>
+            <div>rerum asperiores dolor</div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h1>Skills</h1>
+            <div>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </div>
+          </div>
+          <div
+            class="skills"
+            style="display: flex; justify-content: space-between"
+          >
+            <div
+              class="leftskills"
+              style="
+                display: flex;
+                width: 50%;
+                flex-direction: column;
+                margin-right: 20px;
+                margin-left: 40px;
+                padding: 20px;
+              "
+            >
+              <div>
+                <div style="display: flex; justify-content: space-between">
+                  <div>HTML</div>
+                  <div>100%</div>
+                </div>
+                <div>LINE</div>
+              </div>
+              <div>
+                <div style="display: flex; justify-content: space-between">
+                  <div>CSS</div>
+                  <div>90%</div>
+                </div>
+                <div>LINE</div>
+              </div>
+              <div>
+                <div style="display: flex; justify-content: space-between">
+                  <div>JAVASCRIPT</div>
+                  <div>75%</div>
+                </div>
+                <div>LINE</div>
+              </div>
+            </div>
+
+            <div
+              class="rightskills"
+              style="
+                display: flex;
+                width: 50%;
+                flex-direction: column;
+                margin-right: 40px;
+                padding: 20px;
+              "
+            >
+              <div>
+                <div style="display: flex; justify-content: space-between">
+                  <div>PHP</div>
+                  <div>80%</div>
+                </div>
+                <div>LINE</div>
+              </div>
+              <div>
+                <div style="display: flex; justify-content: space-between">
+                  <div>WORDPRESS/CMS</div>
+                  <div>90%</div>
+                </div>
+                <div>LINE</div>
+              </div>
+              <div>
+                <div style="display: flex; justify-content: space-between">
+                  <div>PHOTOSHOP</div>
+                  <div>55%</div>
+                </div>
+                <div>LINE</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="resume"
+            style="display: flex; justify-content: space-between"
+          >
+            <div>
+              <h1>Resume</h1>
+              <div>
+                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                Quia fugiat sit in iste officiis commodi quidem hic quas.
+              </div>
+
+              <!-- LEFT SIDE -->
+              <div style="display: flex">
+                <div
+                  class="leftresume"
+                  style="
+                    display: flex;
+                    width: 50%;
+                    flex-direction: column;
+                    margin-right: 20px;
+                    margin-left: 40px;
+                    padding: 20px;
+                  "
+                >
+                  <div>
+                    <h1>Sumary</h1>
+                    <h4>ALEX SMITH</h4>
+                    <div>
+                      Innovative and deadline-driven Graphic Designer with 3+
+                      years of experience designing and developing user-centered
+                      digital/print marketing material from initial concept to
+                      final, polished deliverable.
+                    </div>
+                    <div>Portland par 127,Orlando, FL</div>
+                    <div>(123) 456-7891</div>
+                    <div>alice.barkley@example.com</div>
+                  </div>
+
+                  <div>
+                    <div>
+                      <h4>MASTER OF FINE ARTS & GRAPHIC DISIGN</h4>
+                      <div>2015-2016</div>
+                      <div>
+                        Rochester Institute of Technology, Rochester, NY
+                      </div>
+                      <div>
+                        Qui deserunt veniam. Et sed aliquam labore tempore sed
+                        quisquam iusto autem sit. Ea vero voluptatum qui ut
+                        dignissimos deleniti nerada porti sand markend
+                      </div>
+                    </div>
+                    <div>
+                      <h4>BACHELOR OF FINE ARTS & GRAPHIC DESIGN</h4>
+                      <div>2010-2014</div>
+                      <div>
+                        Rochester Institute of Technology, Rochester, NY
+                      </div>
+                      <div>
+                        Quia nobis sequi est occaecati aut. Repudiandae et iusto
+                        quae reiciendis et quis Eius vel ratione eius unde vitae
+                        rerum voluptates asperiores voluptatem Earum molestiae
+                        consequatur neque etlon sader mart dila
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- RIGHT SIDE -->
+
+                <div
+                  class="rightresume"
+                  style="
+                    display: flex;
+                    width: 50%;
+                    flex-direction: column;
+                    margin-right: 20px;
+                    margin-left: 40px;
+                    padding: 20px;
+                  "
+                >
+                  <div>
+                    <h1>Professional Expirience</h1>
+                    <div>
+                      <h4>SENIOR GRAPHIC DESIGN SPECIALIST</h4>
+                      <div>2019-Present</div>
+                      <div>Experion, New York, NY</div>
+                      <div>
+                        Lead in the design, development, and implementation of
+                        the graphic, layout, and production communication
+                        materials
+                      </div>
+                      <div>
+                        Delegate tasks to the 7 members of the design team and
+                        provide counsel on all aspects of the project.
+                      </div>
+                      <div>
+                        Supervise the assessment of all graphic materials in
+                        order to ensure quality and accuracy of the design
+                      </div>
+                      <div>
+                        Oversee the efficient use of production project budgets
+                        ranging from $2,000 - $25,000
+                      </div>
+                    </div>
+                    <div>
+                      <h4>GRAPHIC DESIGN SPECIALIST</h4>
+                      <div>2017 - 2018</div>
+                      <div>Stepping Stone Advertising, New York, NY</div>
+                      <div>
+                        Developed numerous marketing programs (logos,
+                        brochures,infographics, presentations, and
+                        advertisements).
+                      </div>
+                      <div>
+                        Managed up to 5 projects or tasks at a given time while
+                        under pressure
+                      </div>
+                      <div>
+                        Recommended and consulted with clients on the most
+                        appropriate graphic design
+                      </div>
+                      <div>
+                        Created 4+ design presentations and proposals a month
+                        for clients and account managers
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="portfolio"
+                    style="
+                      display: flex;
+                      width: 100%;
+                      height: 40%;
+                      flex-direction: column;
+
+                      margin-left: 30px;
+                      margin-right: 30px;
+                    "
+                  >
+                    <h1>Portfolio</h1>
+                    <div>
+                      Magnam dolores commodi suscipit. Necessitatibus eius
+                      consequatur ex aliquid fuga eum quidem. Sit sint
+                      consectetur velit. Quisquam quos quisquam cupiditate. Et
+                      nemo qui impedit suscipit alias ea. Quia fugiat sit in
+                      iste officiis commodi quidem hic quas.
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+
+                <!--  -->
+              </div>
+
+              <div style="display: flex; flex-direction: column">
+                <div
+                  class="firstlineimg"
+                  style="
+                    display: flex;
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: space-around;
+                  "
+                >
+                  <img
+                    style="display: flex; width: 200px; height: 200px"
+                    src="https://www.pendredprinting.com/wp-content/uploads/2017/10/s-l1600-2697.jpg"
+                  />
+                  <img
+                    style="display: flex; width: 200px; height: 200px"
+                    src="https://www.dior.com/couture/var/dior/storage/images/horizon/beauty/beauty-home-components/the-dior-icons/sauvage-elixir-y0996460/36483772-2-eng-GB/sauvage-elixir-y0996460_1440_1200.jpg"
+                  />
+                  <img
+                    style="display: flex; width: 200px; height: 200px"
+                    src="https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwd3e2dbd9/assets/Y0996510/Y0996510_C099600841_E02_GHC.jpg?sw=715&sh=773&sm=fit&imwidth=800"
+                  />
+                </div>
+                <div
+                  class="secondlineimg"
+                  style="
+                    display: flex;
+                    width: 30%;
+                    height: 30%;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 20px;
+                    margin-right: 20px;
+                  "
+                >
+                  <img
+                    style="display: flex; width: 200px; height: 200px"
+                    src="https://cdn.shopify.com/s/files/1/1213/6334/products/tacito_alveja_1_600x@2x.png?v=1603940502"
+                  />
+
+                  <img
+                    style="display: flex; width: 200px; height: 200px"
+                    src="data:image/jpeg;base64,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"
+                  />
+
+                  <img
+                    style="display: flex; width: 200px; height: 200px"
+                    src="data:image/jpeg;base64,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"
+                  />
+                </div>
+                <div
+                  class="thirdlineimg"
+                  style="
+                    display: flex;
+                    width: 30%;
+                    height: 30%;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 20px;
+                    margin-right: 20px;
+                  "
+                >
+                  <img
+                    style="display: flex; width: 200px; height: 200px"
+                    src="https://ucarecdn.com/841c025c-02c6-409f-a4a4-13f54fc7ec8a/"
+                  />
+                  <img
+                    style="display: flex; width: 200px; height: 200px"
+                    src="https://i0.wp.com/www.thesefourwallsblog.com/wp-content/uploads/2020/03/Best-minimalist-desks-feature.jpg?fit=1972%2C1314&ssl=1"
+                  />
+                  <img
+                    style="display: flex; width: 200px; height: 200px"
+                    src=" https://prostokvashino.ru/upload/iblock/578/57844b181fabdb7e042b48d12f7100ab.jpg"
+                  />
+                </div>
+                <div style="display: flex; flex-direction: column">
+                  <h1>Services</h1>
+                  <div>
+                    Magnam dolores commodi suscipit. Necessitatibus eius
+                    consequatur ex aliquid fuga eum quidem. Sit sint consectetur
+                    velit. Quisquam quos quisquam cupiditate. Et nemo qui
+                    impedit suscipit alias ea. Quia fugiat sit in iste officiis
+                    commodi quidem hic quas.
+                  </div>
+                  <div>
+                    <div>
+                      <div>
+                        <div>
+                          <h4>Lorem Ipsum</h4>
+                          <div>
+                            Voluptatum deleniti atque corrupti quos dolores et
+                            quas molestias excepturi sint occaecati cupiditate
+                            non provident
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Magni Dolores</h4>
+                          <div>
+                            Excepteur sint occaecat cupidatat non proident, sunt
+                            in culpa qui officia deserunt mollit anim id est
+                            laborum
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div>
+                              <h4>Dolor Sitema</h4>
+                              <div>
+                                Minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat
+                                tarad limino ata
+                              </div>
+                            </div>
+                            <div>
+                              <h4>Nemo Enim</h4>
+                              <div>
+                                At vero eos et accusamus et iusto odio
+                                dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div>
+                              <div>
+                                <h4>Sed ut perspiciatis</h4>
+                                <div>
+                                  Duis aute irure dolor in reprehenderit in
+                                  voluptate velit esse cillum dolore eu fugiat
+                                  nulla pariatur
+                                </div>
+                              </div>
+                              <div>
+                                <h4>Eiusmod Tempor</h4>
+                                <div>
+                                  Et harum quidem rerum facilis est et expedita
+                                  distinctio. Nam libero tempore, cum soluta
+                                  nobis est eligendi
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div></div>
+                  </div>
+                  <div>
+                    <h1>Testimonials</h1>
+                    <div>
+                      Magnam dolores commodi suscipit. Necessitatibus eius
+                      consequatur ex aliquid fuga eum quidem. Sit sint
+                      consectetur velit. Quisquam quos quisquam cupiditate. Et
+                      nemo qui impedit suscipit alias ea. Quia fugiat sit in
+                      iste officiis commodi quidem hic quas.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
