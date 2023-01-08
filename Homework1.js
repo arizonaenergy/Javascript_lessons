@@ -20,5 +20,40 @@
  * MISSION
 Poprobovatj method massiva filter
 */
+let arr = [
+  "Dara",
+  "Igorj",
+  "Vodka",
+  "Belka",
+  "Andrej",
+  "Julija",
+  "Hello",
+  "World",
+];
 
-let arr = [];
+function myfunction(Dmitrij) {
+  if (typeof Dmitrij !== "string") {
+    return "error";
+  }
+  arr.push(Dmitrij);
+}
+function stupidfunction(start, end) {
+  if (arr.length == 0) return;
+
+  arr = arr.splice(start, end);
+}
+let i = 1;
+let dog = "pitbull";
+console.log(arr);
+for (let i = 0; i < arr.length; i++) {
+  if (i == 3) break;
+  console.log(arr[i]);
+}
+
+for (let score of arr) {
+  console.log(score);
+}
+
+arr.forEach((score) => {
+  console.log(score);
+});
