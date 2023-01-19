@@ -1,0 +1,9 @@
+//TYPES
+
+// STRING
+
+// NUMBER
+// BOOLEAN
+// UNDEFINED
+// NULL
+// OBJECT
